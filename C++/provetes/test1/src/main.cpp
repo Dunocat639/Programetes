@@ -5,20 +5,26 @@
 
 #include "style_genesis.h" 
 
+#define GUI_LAYOUT_NAME_IMPLEMENTATION
+#include "gui_layout_name.h"
+
 int main() {
     InitWindow(800, 450, "Raygui test");
     SetTargetFPS(60);
 
-    GuiLoadStyleGenesis(); 
+    GuiLayoutNameState state = InitGuiLayoutName();
+
+    GuiLoadStyleGenesis();
 
     while (!WindowShouldClose()) {
         BeginDrawing();
-        
+
+            GuiLayoutName(&state);
+
             ClearBackground(GetColor(GuiGetStyle(DEFAULT, BACKGROUND_COLOR)));
+
             
-            if (GuiButton((Rectangle){ 300, 200, 200, 30 }, "ARA SÍ QUE FUNCIONA")) {
-                
-            }
+            
 
         EndDrawing();
     }
