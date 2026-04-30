@@ -1,0 +1,3 @@
+/home/dunocat639/Documents/Repos/Programetes/out/build/1/CMakeFiles/test1.dir
+/home/dunocat639/Documents/Repos/Programetes/out/build/1/CMakeFiles/edit_cache.dir
+/home/dunocat639/Documents/Repos/Programetes/out/build/1/CMakeFiles/rebuild_cache.dir
