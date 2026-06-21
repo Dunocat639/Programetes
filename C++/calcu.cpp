@@ -36,7 +36,7 @@
 
 int main(){
 
-    bool calcu = true;
+    std::string calcu = true;
 
     while (calcu == true){
 
